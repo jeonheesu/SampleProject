@@ -14,4 +14,8 @@ public interface MemberService {
 
 	MemberDTO memberRead(String m_no);
 
+	void memberUpdate(MemberDTO dto);
+	
+        String login(MemberDTO dto);
+
 }

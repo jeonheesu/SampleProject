@@ -24,7 +24,9 @@
  <td>회원가입일</td>
  <td>삭제하기</td>
  
+ 
  </tr>
+ <a href="/">홈으로</a>
  
   <c:forEach var="list" items="${list }">
    <tr>
@@ -44,7 +46,7 @@
  
  </table>
  
-  <a href="/">홈으로</a>
+  
    
 </body>
 </html>

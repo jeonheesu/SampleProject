@@ -1,5 +1,6 @@
 package org.study.sample.test;
 
+import java.lang.reflect.Member;
 import java.util.List;
 
 import org.junit.Test;
@@ -34,7 +35,7 @@ public class MemberMapperTest {
 		 log.info("memberInsertTest() 끝");
 	 }
 	 
-	 @Test
+	 //@Test
 	 public void memberInsertDummyTest() {
 		 
 		 for(int i = 16; i < 100; i++) {
@@ -67,4 +68,17 @@ public class MemberMapperTest {
     	   MemberDTO dto = mapper.memberRead("15");
     	  log.info(dto.toString());
        }
+       
+        @Test
+        public void memberUpdateTest() {
+       
+         	MemberDTO dto = new MemberDTO();	
+         	dto.setM_no(15);
+         	dto.setM_address("마산");
+         	mapper.memberUpdate(dto);
+         	MemberDTO dto1 = mapper.memberRead("15");
+         	log.info(dto1.toString());
+        	
+        }
+       
 }

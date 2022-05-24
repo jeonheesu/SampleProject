@@ -5,16 +5,12 @@
 <mapper namespace="org.study.sample.mapper.MemberMapper">
 
 	<insert id="memberInsert">
-		INSERT INTO memberTBL (m_id, m_pw, m_address) VALUES (#{m_id}, #{m_pw},
-		#{m_address})
+		INSERT INTO memberTBL (m_id, m_pw, m_address) VALUES (#{m_id}, #{m_pw}, #{m_address})
 	</insert>
 
 	<select id="memberList"
 		resultType="org.study.sample.model.MemberDTO">
 		SELECT * FROM memberTBL
-
-
-
 	</select>
 
 	<delete id="memberDelete">
@@ -33,11 +29,8 @@
      
    
      
-     <select id="getRealPassword" resultType="String">
+    
      
-     select m_pw from memberTBL where m_id = #{m_id}
-     
-     </select>
      
      
      

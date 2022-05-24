@@ -9,7 +9,7 @@
 <body>
   
   
-   <h1>글 수정하기</h1>
+
    
    	  <form action="boardUpdate" method="post">
      <input type="hidden" name="b_no" value="${dto.b_no}">  

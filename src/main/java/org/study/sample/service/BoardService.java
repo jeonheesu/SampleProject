@@ -11,4 +11,7 @@ public interface BoardService {
 	BoardDTO boardRead(String m_no);
 	public void boardUpdate(BoardDTO dto);
 	public void boardDelete(String b_no);
+	
+    
+
 }

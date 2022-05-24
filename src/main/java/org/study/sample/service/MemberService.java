@@ -16,6 +16,6 @@ public interface MemberService {
 
 	void memberUpdate(MemberDTO dto);
 	
-        String login(MemberDTO dto);
+    
 
 }

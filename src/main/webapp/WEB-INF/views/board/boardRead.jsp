@@ -9,9 +9,10 @@
 <title>Insert title here</title>
 </head>
 <body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
 
-	<h1>글 상세보기</h1>
+
 	
 	
 
@@ -20,33 +21,18 @@
 	  작성자 : ${dto.b_writer} <br>
 	  작성일 : ${dto.b_regDate} <br>
 	  
-	  <c:if test="${sessionScope.m_id == dto.b_writer}">
+	 
 	  <a href="/boardUpdate?b_no=${dto.b_no}">수정하기</a> 
 	   <a href="/boardDelete?b_no=${dto.b_no}">삭제하기</a>
-	  	  </c:if>
+
 	 
-	   
-	  <a href="/boardList">목록으로</a>  <br><br>
+	
+
 	  
-	<form action="boardRead">
-	
-	 작성자 : <input type="text" name="c_writer" value="${sessionScope.m_id}" readonly="readonly"> 
-	 글 내용 : <input type="text" name="c_content"> 
-	  <input type="submit" value="작성하기">
+	  	  <a href="/boardList">목록으로</a>  <br>
 	  
-	  </form>
-	  
+
 	 
-	 
-  
 	
-	
-	 
-    
-
-
-	
-
-
 </body>
 </html>

@@ -13,7 +13,7 @@
  
 
 
-<h1>회원목록</h1>
+회원목록
 <table border="1">
 
  <tr>
@@ -26,7 +26,7 @@
  
  
  </tr>
- <a href="/">홈으로</a>
+
  
   <c:forEach var="list" items="${list }">
    <tr>
@@ -34,7 +34,7 @@
  <td> <a href="/memberRead?m_no=${list.m_no}"> ${list.m_id }</a></td>
  <td>${list.m_pw }</td>
  <td>${list.m_address }</td>
- <td><fmt:formatDate value="${list.m_regDate }" pattern="yyyy-MM-dd HH:mm:ss"/></td>
+ <td><fmt:formatDate value="${list.m_regDate }" pattern="yyyy-MM-dd"/></td>
   <td><a href="/memberDelete?m_no=${list.m_no}">삭제</a></td>
   
  

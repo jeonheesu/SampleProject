@@ -7,12 +7,9 @@ import org.study.sample.model.BoardDTO;
 
 @Mapper
 public interface BoardMapper {
-
-	public void boardInsert(BoardDTO dto);
+	void boardInsert(BoardDTO dto);
 	public List<BoardDTO> boardlist();
 	public BoardDTO boardRead(String b_no);
 	public void boardUpdate(BoardDTO dto);
 	public void boardDelete(String b_no);
-	
 }
-	
